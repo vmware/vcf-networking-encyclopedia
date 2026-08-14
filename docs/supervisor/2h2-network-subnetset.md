@@ -6,7 +6,7 @@
 
 <div markdown>
 
-This section describes the procedures for **provisioning and managing Network Services within a VKS Namespace utilizing an "NSX + DTGW/VNA"** architecture inside a vSphere environment.
+This section describes the procedures for **provisioning and managing Network Services within a VKS Namespace utilizing an "NSX + DTGW/VNA" architecture** inside a vSphere environment.
 
 * **Network Services**
     * [Subnets](2h1-network-subnet.md)
@@ -51,4 +51,9 @@ Navigate to **SubnetSets**, and click **New SubnetSet**.
 ### Validate Subnetset
 Click on the newly created Subnetset, and navigate to **Subnets** to view its current subnets CIDR and VPC Gateway.
 ![Created Subnet](images/2h2-2a-subnetsetcreated.jpg){ width="90%" style="display: block; margin: 0 auto;" }  
+
+!!! warning "Subnet list empty"
+    SubnetSets automatically scale in/out the subnets.  
+    To have a subnet in a SubnetSet, you need to deploy first at least 1 VM / K8s in the SubnetSet.
+
 

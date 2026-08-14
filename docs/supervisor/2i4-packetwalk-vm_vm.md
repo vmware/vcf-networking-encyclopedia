@@ -13,10 +13,10 @@ This section describes the procedures for **Troubleshooting Network Services int
     * [N/S External to VM](2i2-packetwalk-ext_vm.md)  
     * [E/W Pod to Pod](2i3-packetwalk-pod_pod.md)  
     * [**E/W VM to VM**](#packetwalk)  
-* App Access broken  
-    * [VIP access down](2j1-troubleshooting-vip.md)  
-    * [VM access down](2j2-troubleshooting-vm.md)  
-    * [Pod access down](2j3-troubleshooting-pod.md)  
+* App Access Broken  
+    * [VIP Access Down](2j1-troubleshooting-vip.md)  
+    * [VM Access Down](2j2-troubleshooting-vm.md)  
+    * [Pod Access Down](2j3-troubleshooting-pod.md)  
 
 </div>
 
@@ -47,10 +47,15 @@ In the example below, the VMs are connected to different subnets.
 ### Packet Walk
 
 * **Step1: External Client accesses the VM**  
-`VM1 (10.1.7.147) => VM (172.30.0.2)`  
+`VM1 (10.1.7.147) => VM2 (172.30.0.2)`  
 
-    If the VMs are on different subnets, the traffic is first routed by the local distributed VPC gateway.  
-    Then if the VMs reside on a different ESX, the cross-ESX traffic is encapsulated using the ESX TEP IPs.  
+    The routing is always done on the source-ESX.
+
+    !!! note "Encapsulation for Cross-ESX Traffic"
+        If the VMs reside on different ESX, the cross-ESX traffic is encapsulated using the ESX TEP IPs.  
+        <code>ESX-TEP_IP (10.1.3.x) => ESX-TEP_IP (10.1.3.x)<br>
+        &nbsp;&nbsp;[VM1 (10.1.7.147) => VM2 (172.30.0.2)]
+        </code>
 
 
 
