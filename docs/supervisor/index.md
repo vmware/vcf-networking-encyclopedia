@@ -40,7 +40,7 @@ Explore the specific network architectures available for your Supervisor cluster
                 * Cross-VPC VIP communication (VPC Connectivity Policies)
         * **Scale:**
             * Uses fewer public IPs (K8s nodes use private IPs)
-            * VIPs are highly scalable, distributed across up to 10 VNA Nodes in an Active/Active (A/A) configuration
+            * VIPs are highly scalable, distributed across up to 10 VNA or Edge Nodes in an Active/Active (A/A) configuration
     * **Cons:**
         * **VMware Editions:** Only available in VMware Cloud Foundation (VCF) (not VMware vSphere Foundation (VVF))
         * **Operations:** Requires NSX (though installation and management remain very simple)
