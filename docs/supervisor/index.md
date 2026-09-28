@@ -44,7 +44,7 @@ Explore the specific network architectures available for your Supervisor cluster
     * **Cons:**
         * **VMware Editions:** Only available in VMware Cloud Foundation (VCF) (not VMware vSphere Foundation (VVF))
         * **Operations:** Requires NSX (though installation and management remain very simple)
-        * **Footprint:** Slightly larger footprint (the VNA is slightly larger than the FLB)
+        * **Footprint:** Slightly larger footprint (the VNA or Edge Node is slightly larger than the FLB)
     * **Requirements:**
         * **For both DTGW/CTGW:** Large MTU (min 1700 - recommended 9000)
         * **For DTGW:** L2/VLAN connectivity required across vCenter cluster(s)
