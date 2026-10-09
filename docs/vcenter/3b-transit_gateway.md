@@ -59,7 +59,7 @@ Different Transit Gateway types are available:
     * **High Availability Mode**:  
       Select the operational redundancy and service support:  
       . Active/Active: Maximizes throughput and scalability by distributing the Transit Gateway load across multiple Edge Nodes simultaneously.  
-      Active/Standby: Required for stateful network services (NAT and VPN). In this mode, this Transit Gateway North/South traffic is processed by a single "Active" Edge Node to maintain session state.
+      . Active/Standby: Required for stateful network services (NAT and VPN). In this mode, this Transit Gateway North/South traffic is processed by a single "Active" Edge Node to maintain session state.
 
     * **TGW Edge Cluster**:  
       Select the specific Edge Cluster that will host this Centralized Transit Gateway.
@@ -74,7 +74,7 @@ Different Transit Gateway types are available:
 
     * **VPC Network Configuration**  
       (Optional) Create a new Connectivity Profile for future VPC.  
-      For more information on Connectivity Profile, refer to the [Connectivity Profile](3e-connectivity_profile.md page.  
+      For more information on Connectivity Profile, refer to the [Connectivity Profile](3e-connectivity_profile.md) page.  
       The Connectivity Profile will be associated with this Transit Gateway and with:
         * **VPC External IP Blocks:** Select or create a new External IP Block for future VPC Public subnets, NAT, LB VIP (AVI configuration), and VPN (NSX configuration).
         * **Private - Transit Gateway IP Blocks:** Select or create a new Private TGW IP Block used for future VPC Private-TGW subnets.
