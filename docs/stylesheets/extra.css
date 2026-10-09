@@ -83,3 +83,19 @@ img.center {
 .md-typeset > .grid {
   margin-left: 1rem; 
 }
+/* Full-width layout: nav flush left, TOC flush right, content fills all space between */
+.md-grid {
+  max-width: 100%;
+}
+
+/* Render each image at its natural width — max-width caps are set per-image inline.
+   Makes narrow dialogs appear narrow and wide screenshots appear wide. */
+.md-typeset img {
+  width: auto !important;
+}
+
+/* Images inside admonition/details boxes must not overflow their container */
+.md-typeset .admonition img,
+.md-typeset details img {
+  max-width: 100% !important;
+}
