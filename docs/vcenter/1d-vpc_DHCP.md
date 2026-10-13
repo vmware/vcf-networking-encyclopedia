@@ -13,7 +13,7 @@ This section describes the procedures for configuring Dynamic Host Configuration
 
 
 <div markdown>
-![vCenter VPC Connectivity](images/1d-0-VPC_DHCP.jpg){ width="100%" style="max-width: 250px;" }
+![vCenter VPC Connectivity](images/1d-0-VPC_DHCP.jpg){ width="100%" style="max-width: 150px;" }
 </div>
 
 </div>

@@ -13,7 +13,7 @@ This section describes the procedures for configuring NSX Edge Clusters and Node
 
 
 <div markdown>
-![vCenter Edge](images/2a-0-Edge.jpg){ width="100%" style="max-width: 250px;" }
+![vCenter Edge](images/2a-0-Edge.jpg){ width="100%" style="max-width: 150px;" }
 </div>
 
 </div>

@@ -12,7 +12,7 @@ This section describes the procedures for configuring Network Address Translatio
 </div>
 
 <div markdown>
-![vCenter VPC Connectivity](images/1c-0-VPC_NAT.jpg){ width="100%" style="max-width: 250px;" }
+![vCenter VPC Connectivity](images/1c-0-VPC_NAT.jpg){ width="100%" style="max-width: 150px;" }
 </div>
 
 </div>

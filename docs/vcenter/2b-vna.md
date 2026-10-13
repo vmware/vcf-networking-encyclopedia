@@ -2,7 +2,7 @@
   <img src="../../assets/vCenter.png" style="height:30px; vertical-align:middle;"> VNA Configuration in vCenter
 </h1>
 
-<div class="grid" markdown style="grid-template-columns: 65% 35%">
+<div class="grid" markdown style="grid-template-columns: 70% 30%">
 
 <div markdown>
 

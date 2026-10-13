@@ -13,7 +13,7 @@ This section describes the procedures for configuring External Connections using
 
 
 <div markdown>
-![vCenter External Connection](images/3a-0-External_Connection.jpg){ width="100%" style="max-width: 250px;" }
+![vCenter External Connection](images/3a-0-External_Connection.jpg){ width="100%" style="max-width: 150px;" }
 </div>
 
 </div>

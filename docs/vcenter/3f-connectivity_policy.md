@@ -2,7 +2,7 @@
   <img src="../../assets/vCenter.png" style="height:30px; vertical-align:middle;"> Connectivity Policy in vCenter
 </h1>
 
-<div class="grid" markdown style="grid-template-columns: 70% 30%">
+<div class="grid" markdown style="grid-template-columns: 75% 25%">
 
 <div markdown>
 This section describes the procedures for configuring Connectivity Policy using the vSphere Client.

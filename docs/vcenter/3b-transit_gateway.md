@@ -12,7 +12,7 @@ This section describes the procedures for configuring Transit Gateways using the
 </div>
 
 <div markdown>
-![vCenter External Connection](images/3b-0-Transit_Gateway.jpg){ width="100%" style="max-width: 250px;" }
+![vCenter External Connection](images/3b-0-Transit_Gateway.jpg){ width="100%" style="max-width: 150px;" }
 </div>
 
 </div>

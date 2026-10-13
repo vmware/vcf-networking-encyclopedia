@@ -18,7 +18,7 @@ There are 2 types of VPC Subnets:
 
 
 <div markdown>
-![vCenter VPC Connectivity](images/1b-0-VPC_Subnet.jpg){ width="100%" style="max-width: 250px;" }
+![vCenter VPC Connectivity](images/1b-0-VPC_Subnet.jpg){ width="100%" style="max-width: 150px;" }
 </div>
 
 </div>

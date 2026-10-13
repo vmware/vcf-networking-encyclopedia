@@ -2,7 +2,7 @@
   <img src="../../assets/vCenter.png" style="height:30px; vertical-align:middle;"> Connectivity Profile in vCenter
 </h1>
 
-<div class="grid" markdown style="grid-template-columns: 60% 40%">
+<div class="grid" markdown style="grid-template-columns: 70% 30%">
 
 <div markdown>
 This section describes the procedures for configuring  Connectivity Profile using the vSphere Client.
