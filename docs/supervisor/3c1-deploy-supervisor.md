@@ -37,7 +37,7 @@ This section describes the requirements for **deploying a Supervisor utilizing a
 
 ### Create Supervisor
 Navigate to **vCenter** > **Supervisor Management**, and click **Get Started**.
-<img src="../images/3c1-1-AddSupervisor.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Add Supervisor Wizard">
+<img src="../images/3c1-1-AddSupervisor.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="Add Supervisor Wizard">
 
 1. **vCenter Server and Network**  
     * Select the network stack **VCF Networking with VPC (recommended)**, and click **Next**.  
@@ -86,26 +86,26 @@ Navigate to **vCenter** > **Content Libraries** > and click **Create**.
 
   1. **Name and Location**  
     Give it a **Name** and select the **vCenter** hosting that Content Library, and click **Next**.  
-    <img src="../images/2c1-3a-Name.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="vCenter Server and Network Configuration">  
+    <img src="../images/2c1-3a-Name.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="vCenter Server and Network Configuration">  
 
   2. **Configure Content Library**  
     Choose between **Local content library** (you manually upload VKS images) and **Subscribed content library** (vCenter automatically downloads VKS images from a repository), and click **Next**.  
     > *Note: This example uses a Subscribed content library pointing to the public repository `https://wp-content.vmware.com/v2/latest/lib.json`, with the option to "download content when needed" to save local storage space.*  
   
-    <img src="../images/2c1-3b-ContentLibrary.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="vCenter Server and Network Configuration">   
+    <img src="../images/2c1-3b-ContentLibrary.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="vCenter Server and Network Configuration">   
 
   3. **Apply Security Policy**  
     Apply a **security policy** if required by your organization, and click **Next**.  
     *(This example uses no security policy).*  
-    <img src="../images/2c1-3c-SecurityPolicy.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="vCenter Server and Network Configuration">  
+    <img src="../images/2c1-3c-SecurityPolicy.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="vCenter Server and Network Configuration">  
 
   4. **Add Storage**  
     Select a **storage** to host the content library images, and click **Next**.  
-    <img src="../images/2c1-3d-Storage.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="vCenter Server and Network Configuration">  
+    <img src="../images/2c1-3d-Storage.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="vCenter Server and Network Configuration">  
 
   5. **Ready to complete**  
     Review the content library, and click **Finish**.  
-    <img src="../images/2c1-3e-Review.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="vCenter Server and Network Configuration">  
+    <img src="../images/2c1-3e-Review.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="vCenter Server and Network Configuration">  
 
 
 #### **Associate the Content Library to the Supervisor**  
@@ -118,7 +118,7 @@ Navigate to **vCenter** > **Supervisor Management** > **Supervisors**, select **
 
   2. **Select Content Library**  
     Select **Content Library with VKS images**, and click **ADD**.  
-    <img src="../images/2c1-4c-SelectContentLibrary.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="vCenter Server and Network Configuration">  
+    <img src="../images/2c1-4c-SelectContentLibrary.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 600px;" alt="vCenter Server and Network Configuration">  
 
 ---
 

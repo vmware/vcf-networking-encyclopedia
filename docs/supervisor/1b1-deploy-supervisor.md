@@ -26,7 +26,7 @@ This section describes the procedures for **deploying the Supervisor utilizing a
 
 ### Create Supervisor
 Navigate to **vCenter** > **Supervisor Management**, and click **Get Started**.
-<img src="../images/1b-1-AddSupervisor.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Add Supervisor Wizard">
+<img src="../images/1b-1-AddSupervisor.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="Add Supervisor Wizard">
 
 1. **vCenter Server and Network**  
     * Select the network stack **vSphere Distributed Switch (VDS) with Load Balancer Type "Foundation Load Balancer"**, and click **Next**.  
@@ -62,8 +62,8 @@ Navigate to **vCenter** > **Supervisor Management**, and click **Get Started**.
         By default, the same Port Group used by the Supervisor and future K8s Nodes/VMs is selected, but this can be changed. This is the FLB(s) vNIC used to communicate with the Supervisor and workloads.
 
     <img src="../images/1b-1f-LoadBalancer.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Advanced Settings and Sizing">  
-    <img src="../images/1b-1f1-LoadBalancer.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Advanced Settings and Sizing">  
-    <img src="../images/1b-1f2-LoadBalancer.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Advanced Settings and Sizing">  
+    <img src="../images/1b-1f1-LoadBalancer.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 600px;" alt="Advanced Settings and Sizing">  
+    <img src="../images/1b-1f2-LoadBalancer.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 600px;" alt="Advanced Settings and Sizing">  
 
 7. **Advanced Settings**  
     * Select the **Supervisor Control Plane Size**, and click **Next**.  
@@ -85,26 +85,26 @@ Navigate to **vCenter** > **Content Libraries** > and click **Create**.
 
   1. **Name and Location**  
     Give it a **Name** and select the **vCenter** hosting that Content Library, and click **Next**.  
-    <img src="../images/2c1-3a-Name.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="vCenter Server and Network Configuration">  
+    <img src="../images/2c1-3a-Name.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="vCenter Server and Network Configuration">  
 
   2. **Configure Content Library**  
     Choose between **Local content library** (you manually upload VKS images) and **Subscribed content library** (vCenter automatically downloads VKS images from a repository), and click **Next**.  
     > *Note: This example uses a Subscribed content library pointing to the public repository `https://wp-content.vmware.com/v2/latest/lib.json`, with the option to "download content when needed" to save local storage space.*  
 
-    <img src="../images/2c1-3b-ContentLibrary.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="vCenter Server and Network Configuration">  
+    <img src="../images/2c1-3b-ContentLibrary.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="vCenter Server and Network Configuration">  
 
   3. **Apply Security Policy**  
     Apply a **security policy** if required by your organization, and click **Next**.  
     *(This example uses no security policy).*  
-    <img src="../images/2c1-3c-SecurityPolicy.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="vCenter Server and Network Configuration">  
+    <img src="../images/2c1-3c-SecurityPolicy.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="vCenter Server and Network Configuration">  
 
   4. **Add Storage**  
     Select a **storage** to host the content library images, and click **Next**.  
-    <img src="../images/2c1-3d-Storage.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="vCenter Server and Network Configuration">  
+    <img src="../images/2c1-3d-Storage.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="vCenter Server and Network Configuration">  
 
   5. **Ready to complete**  
     Review the content library, and click **Finish**.  
-    <img src="../images/2c1-3e-Review.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="vCenter Server and Network Configuration">  
+    <img src="../images/2c1-3e-Review.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="vCenter Server and Network Configuration">  
 
 
 #### **Associate the Content Library to the Supervisor**  
@@ -117,7 +117,7 @@ Navigate to **vCenter** > **Supervisor Management** > **Supervisors**, select **
 
   2. **Select Content Library**  
     Select **Content Library with VKS images**, and click **ADD**.  
-    <img src="../images/2c1-4c-SelectContentLibrary.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="vCenter Server and Network Configuration">  
+    <img src="../images/2c1-4c-SelectContentLibrary.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 600px;" alt="vCenter Server and Network Configuration">  
 
 ---
 
@@ -132,14 +132,14 @@ Check the following fields to ensure they reflect a healthy state:
   <li style="margin-bottom: 2px;">Host Config Status</li>
   <li style="margin-bottom: 2px;">Control Plane Node Address</li>
 </ul>
-<img src="../images/1b-5a-Validation.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Supervisor Validation Status">
+<img src="../images/1b-5a-Validation.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="Supervisor Validation Status">
 
 #### **Validate Supervisor Content Library**  
 Validate Supervisor Content Library by navigating to **vCenter** > **Supervisor Management** > **Supervisors**, select **[your supervisor]**
 <img src="../images/1b-5b-Validation.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Supervisor Validation Status">
 
-??? info ":material-information-outline: Ignore Kubernetes Status Warning"
-    <img src="../images/1b-5b1-Warning.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Supervisor Warning">
+??? info "Ignore Kubernetes Status Warning"
+    <img src="../images/1b-5b1-Warning.jpg" style="display: block; margin: 0 auto; width: 75% !important ; max-width: 800px;" alt="Supervisor Warning">
     A Supervisor utilizing the "VDS + FLB" architecture supports a maximum of 2 FLB VMs, meaning it only requires 2 IP addresses within the Management and Virtual Server Networks (configured during Step 6).  
     If exactly 2 IPs are allocated to those networks, the pool is fully consumed immediately upon deployment, triggering a low-IP warning in the UI.  
     **This warning is expected behavior in this specific architecture and can be safely ignored.**

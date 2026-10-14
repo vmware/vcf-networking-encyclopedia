@@ -34,7 +34,7 @@ A **SubnetSet** provides dynamic, automated scaling functionality for subnets:
 
 For more information about Subnets settings review the [VPC Subnet Overlay page](../vcenter/1b-vpc_subnet.md#overlay){target="_blank"}.
 
-<img src="../images/3h2-1-Topology.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Topology">
+<img src="../images/3h2-1-Topology.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 500px;" alt="Topology">
 
 ### Create SubnetSet
 
@@ -44,13 +44,13 @@ Under the **Resources** card, click **Network - Go to Service**.
 
 1. **Create New SubnetSet**  
 Navigate to **SubnetSets**, and click **New SubnetSet**.  
-<img src="../images/2h2-1a-subnetsetcreate.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Create Subnet">  
+<img src="../images/2h2-1a-subnetsetcreate.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 500px;" alt="Create Subnet">  
 
 ---
 
 ### Validate Subnetset
 Click on the newly created Subnetset, and navigate to **Subnets** to view its current subnets CIDR and VPC Gateway.
-<img src="../images/2h2-2a-subnetsetcreated.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Created Subnet">  
+<img src="../images/2h2-2a-subnetsetcreated.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="Created Subnet">  
 
 !!! warning "Subnet list empty"
     SubnetSets automatically scale in/out the subnets.  

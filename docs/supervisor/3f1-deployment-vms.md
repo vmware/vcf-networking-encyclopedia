@@ -24,7 +24,7 @@ This section describes the procedures for **deploying an application (VMs/K8s) i
 
 ## Deploy App (VMs) {: #deployment_vms }
 
-<img src="../images/3f1-1-Topology.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Topology">
+<img src="../images/3f1-1-Topology.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 500px;" alt="Topology">
 
 ### Deploy a VM
 
@@ -33,15 +33,15 @@ Navigate to **vCenter** > **Supervisor Management** > **Supervisors**, select **
 
 1. **Deploy VM from..**  
 Select between **OVF** or **ISO**, and click **Next**.  
-<img src="../images/2f1-1a-VMFrom.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Select VM Deployment Source">  
+<img src="../images/2f1-1a-VMFrom.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="Select VM Deployment Source">  
 
 1. **Deploy a New VM**  
 Choose a **VM Name**, a **VM Image**, a **VM Class** (size and reservation of the VM), and click **Review and Confirm**.  
-<img src="../images/2f1-1b-NewVM.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Configure New VM Settings">  
+<img src="../images/2f1-1b-NewVM.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="Configure New VM Settings">  
 
 1. **Review and Confirm**  
 Review the settings, and click **Deploy VM**.  
-<img src="../images/2f1-1c-DeployVM.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Review VM Deployment Details">  
+<img src="../images/2f1-1c-DeployVM.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="Review VM Deployment Details">  
 
     ??? info "More options"
         More options are available under **Advanced Settings (Optional)** and **Network Configuration (Optional)**, such as Persistent Volumes and Cloud-Init for Guest Customization.  

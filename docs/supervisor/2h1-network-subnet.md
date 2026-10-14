@@ -26,7 +26,7 @@ This section describes the procedures for **provisioning and managing Network Se
 
 ## Network Services - Subnets {: #networkservices }
 
-<img src="../images/2h1-1-Topology.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Topology">
+<img src="../images/2h1-1-Topology.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 500px;" alt="Topology">
 
 ### Create Subnet
 
@@ -36,7 +36,7 @@ Under the **Resources** card, click **Network - Go to Service**.
 
 1. **Create New Subnet**  
 Navigate to **Subnets**, and click **New Subnet**.  
-<img src="../images/2h1-1a-subnetcreate.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Create Subnet">  
+<img src="../images/2h1-1a-subnetcreate.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 500px;" alt="Create Subnet">  
 
 For more information about Subnets settings review the [VPC Subnet Overlay page](../vcenter/1b-vpc_subnet.md#overlay){target="_blank"}.
 
@@ -45,5 +45,5 @@ For more information about Subnets settings review the [VPC Subnet Overlay page]
 
 ### Validate Subnet Creation
 Expand the newly created Subnet to view its assigned CIDR and VPC Gateway.
-<img src="../images/2h1-2a-subnetcreated.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Created Subnet">  
+<img src="../images/2h1-2a-subnetcreated.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="Created Subnet">  
 

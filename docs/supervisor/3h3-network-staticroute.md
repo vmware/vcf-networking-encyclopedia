@@ -28,7 +28,7 @@ This section describes the procedures for **provisioning and managing Network Se
 The primary use case for configuring a **Static Route** is to enable direct, routable communication to individual K8s Pods residing on specific Worker Nodes.  
 Note: With the "NSX + DTGW/VNA" architecture, communication to individual K8s Pods is only from VMs within the VPC.
 
-<img src="../images/3h3-1-Topology.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Topology">
+<img src="../images/3h3-1-Topology.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 500px;" alt="Topology">
 
 ### Create Static Route
 
@@ -38,7 +38,7 @@ Under the **Resources** card, click **Network - Go to Service**.
 
 1. **Create New Static Route**  
 Navigate to **Static Routes**, and click **New Static Route**.  
-<img src="../images/2h3-1a-staticroutecreate.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Create Subnet">  
+<img src="../images/2h3-1a-staticroutecreate.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 500px;" alt="Create Subnet">  
 
     ??? info "How to find required IP information via kubectl"
         1. **Find the Pod subnet (CIDR) of each K8s Node** 
@@ -85,7 +85,7 @@ Navigate to **Static Routes**, and click **New Static Route**.
 
 1. **Static Route Configuration**  
 Expand the newly created Static Route to view its routes.
-<img src="../images/2h3-2a-staticroutecreated.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Created StaticRoute">  
+<img src="../images/2h3-2a-staticroutecreated.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 600px;" alt="Created StaticRoute">  
 
 1. **Static Route Validation**  
 To verify connectivity, connect to a VM within the VPC and use `curl` to directly access the Pod's IP and port (assuming the application is web).

@@ -24,7 +24,7 @@ This section describes the procedures for **deploying a K8s Cluster in a Namespa
 
 ## K8s Cluster Deployment {: #deployment_k8s }
 
-<img src="../images/3e1-1-Topology.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Topology">
+<img src="../images/3e1-1-Topology.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 500px;" alt="Topology">
 
 ### Create K8s Cluster
 
@@ -33,11 +33,11 @@ Navigate to **vCenter** > **Supervisor Management** > **Supervisors**, select **
 
 1. **Configuration Type**  
 Select the **Cluster Type** and **Configuration Type**.
-<img src="../images/2e1-1a-ConfType.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Select VM Deployment Source">  
+<img src="../images/2e1-1a-ConfType.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="Select VM Deployment Source">  
 
 1. **Review and Confirm**  
 Review and click **Finish** to deploy the k8s cluster.
-<img src="../images/2e1-1b-Deploy.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Select VM Deployment Source">  
+<img src="../images/2e1-1b-Deploy.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="Select VM Deployment Source">  
 
 ??? info "More k8s cluster options"
     To get more options, such as **replicas** and **OS images**, select at step1 **Custom configuration**.
@@ -56,7 +56,7 @@ Once the wizard completes, verify the deployment was successful by navigating to
 #### Retrieve K8s Cluster Controller VIP
 Once the wizard completes, look at the K8s Cluster YAML file by navigating to the K8s Cluster Status (see above), click on **View YAML**, and find the **controlPlaneEndpoint** configuration.
 
-<img src="../images/3e1-2b-K8sVIP.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Find K8s Cluster VIP">
+<img src="../images/3e1-2b-K8sVIP.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 600px;" alt="Find K8s Cluster VIP">
 
 #### Check K8s Cluster VMs in vCenter Inventory
 Verify the K8s Cluster VMs are running by navigating to **vCenter** > **Inventory**, select the **K8s VM in the Namespace**.

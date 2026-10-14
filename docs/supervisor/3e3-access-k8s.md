@@ -24,7 +24,7 @@ This section describes the procedures for **deploying a K8s Cluster in a Namespa
 
 ##  K8s Cluster Access {: #access_k8s }
 
-<img src="../images/3e2-1-Topology.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Topology">
+<img src="../images/3e2-1-Topology.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 500px;" alt="Topology">
 
 ??? info ":material-laptop: Client Operating System"
     While the command outputs below are captured from a **Windows client**, the `vcf` and `kubectl` CLI tools operate identically across **Linux** and **macOS** environments.
