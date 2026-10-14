@@ -12,7 +12,7 @@ This section describes the procedures for configuring a VPC Gateway using the vS
 </div>
 
 <div markdown>
-![vCenter VPC Connectivity](images/1a-0-VPC_Gateway_Info.jpg){ width="100%" style="max-width: 250px;" }
+<img src="../images/1a-0-VPC_Gateway_Info.jpg" style="width: 85% !important; max-width: 250px;" alt="vCenter VPC Connectivity">
 </div>
 
 </div>
@@ -24,10 +24,10 @@ This section describes the procedures for configuring a VPC Gateway using the vS
 ### Configuration
 
 * **Step1. Create new VPC Gateway**
-    ![vCenter Create VPC](images/1a-1-Create_VPC_Gateway.jpg){ width="80%" style="display: block; margin: 0 auto; max-width: 900px;" }
+    <img src="../images/1a-1-Create_VPC_Gateway.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 600px;" alt="vCenter Create VPC">
 
 * **Step2. Configure new VPC Gateway**
-    ![vCenter Create VPC](images/1a-2-Create_VPC_Gateway.jpg){ width="50%" style="display: block; margin: 0 auto; max-width: 900px;" }
+    <img src="../images/1a-2-Create_VPC_Gateway.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 450px;" alt="vCenter Create VPC">
 
     * **Private - VPC IP CIDRs**  
       (Optional) Defines the IP address space reserved for internal VPC subnets.  
@@ -48,6 +48,6 @@ This section describes the procedures for configuring a VPC Gateway using the vS
 ### Monitoring
 #### Topology
 You can see the VPC Gateway in a graphical way under Topology:
-![vCenter Validation VPC Gateway](images/1a-3-Validation_VPC_Gateway.jpg){ width="90%" style="display: block; margin: 0 auto; max-width: 900px;" }
+<img src="../images/1a-3-Validation_VPC_Gateway.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="vCenter Validation VPC Gateway">
 
 ---

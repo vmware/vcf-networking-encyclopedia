@@ -13,7 +13,7 @@ This section describes the procedures for configuring NSX Virtual Network Applia
 
 
 <div markdown>
-![vCenter VNA](images/2b-0-VNA.jpg){ width="100%" style="max-width: 250px;" }
+<img src="../images/2b-0-VNA.jpg" style="width: 85% !important; max-width: 250px;" alt="vCenter VNA">
 </div>
 
 </div>
@@ -25,17 +25,17 @@ This section describes the procedures for configuring NSX Virtual Network Applia
 ### Configuration
 
 * **Step1. Create new VNA Cluster / VNA Nodes**
-    ![vCenter VNA Cluster](images/2b-1-Create_VNA.jpg){ width="80%" style="display: block; margin: 0 auto; max-width: 900px;" }
+    <img src="../images/2b-1-Create_VNA.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="vCenter VNA Cluster">
 
 * **Step2. Configure VNA Cluster**
-    ![vCenter VNA Cluster config](images/2b-2-Create_VNA.jpg){ width="50%" style="display: block; margin: 0 auto; max-width: 900px;" }
+    <img src="../images/2b-2-Create_VNA.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 600px;" alt="vCenter VNA Cluster config">
 
     * **Node Form Factor**:  
       Select the appliance size (vCPU / Memory) of the VNA Nodes.  
       This determines the scale and performance limits for the logical routers (VPC-SR Gateways) hosted on the node.
 
 * **Step3. Configure VNA Nodes Placement and Networking**
-    ![vCenter VNA Node](images/2b-3a-Configure_VNANode1.jpg){ width="80%" style="display: block; margin: 0 auto; max-width: 900px;" }
+    <img src="../images/2b-3a-Configure_VNANode1.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="vCenter VNA Node">
 
     * **vSphere Cluster / Resource Pool / Host Group Affinity / Data Store**:  
       Defines the physical placement of the Edge Node VM.  
@@ -49,13 +49,13 @@ This section describes the procedures for configuring NSX Virtual Network Applia
 <div style="margin-left: 40px; margin-right: 40px;" markdown="1">
 ??? info "Cloning option"
     In case other Edge Nodes have the vSphere Cluster and Uplink settings, use the cloning option.
-    ![Add Edge Node2](images/2b-3b-Configure_VNANode2.jpg){ width="50%" style="display: block; margin: 0 auto; max-width: 900px;" }
+    <img src="../images/2b-3b-Configure_VNANode2.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Add Edge Node2">
 </div>
 
 
 ### Monitoring
 * **Status**
     The status reflects the successful application of the configuration.
-    ![vCenter VNA Status](images/2b-4-Validation_VNA.jpg){ width="90%" style="display: block; margin: 0 auto; max-width: 900px;" }
+    <img src="../images/2b-4-Validation_VNA.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="vCenter VNA Status">
 
 ---

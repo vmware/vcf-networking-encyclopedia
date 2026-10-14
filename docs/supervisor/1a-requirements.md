@@ -12,7 +12,7 @@ This section describes the requirements for **deploying the Supervisor utilizing
 </div>
 
 <div markdown>
-![VDS Architecture](images/0-VDS.jpg){ width="100%" style="max-width: 250px;" }
+<img src="../images/0-VDS.jpg" style="width: 85% !important; max-width: 250px;" alt="VDS Architecture">
 </div>
 </div>
 
@@ -21,7 +21,7 @@ This section describes the requirements for **deploying the Supervisor utilizing
 ## Requirements {: #requirements }
 
 Supervisor with "VDS + FLB" has the following networking requirements:  
-![Topology](images/1a-1-Topology.jpg){ width="80%" style="display: block; margin: 0 auto; max-width: 900px;" }
+<img src="../images/1a-1-Topology.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Topology">
 
 ### Physical Fabric {: #physical_fabric }
 
@@ -47,7 +47,7 @@ Supervisor with "VDS + FLB" has the following networking requirements:
     ??? info "Status Validation"
         Navigate to **vCenter** > **Networking** > **VDS-PortGroup** > **Edit Settings** > **VLAN**.  
         Ensure the VLAN Type is "VLAN" with the right "VLAN ID":
-        ![VDS Port Group Settings](images/1a-2a-VDS-PG.jpg){ width="95%" style="display: block; margin: 0 auto; max-width: 900px;" }
+        <img src="../images/1a-2a-VDS-PG.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="VDS Port Group Settings">
 
 * **Dataplane**:  
     VDS Port Group VLAN for the K8s Dataplane traffic.
@@ -55,7 +55,7 @@ Supervisor with "VDS + FLB" has the following networking requirements:
     ??? info "Status Validation"
         Navigate to **vCenter** > **Networking** > **VDS-PortGroup** > **Edit Settings** > **VLAN**.  
         Ensure the VLAN Type is "VLAN" with the right "VLAN ID":
-        ![VDS Port Group Settings](images/1a-2b-VDS-PG.jpg){ width="95%" style="display: block; margin: 0 auto; max-width: 900px;" }
+        <img src="../images/1a-2b-VDS-PG.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="VDS Port Group Settings">
 
 * **(Optional) VIPs**:  
     VDS Port Group VLAN for the K8s VIPs traffic.
@@ -63,6 +63,6 @@ Supervisor with "VDS + FLB" has the following networking requirements:
     ??? info "Status Validation"
         Navigate to **vCenter** > **Networking** > **VDS-PortGroup** > **Edit Settings** > **VLAN**.  
         Ensure the VLAN Type is "VLAN" with the right "VLAN ID":
-        ![VDS Port Group Settings](images/1a-2c-VDS-PG.jpg){ width="95%" style="display: block; margin: 0 auto; max-width: 900px;" }
+        <img src="../images/1a-2c-VDS-PG.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="VDS Port Group Settings">
 
 

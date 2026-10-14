@@ -15,7 +15,7 @@ This section describes the procedures for **deploying the Supervisor Namespace u
 </div>
 
 <div markdown>
-![VDS Architecture](images/1c1-0-Namespace.jpg){ width="100%" style="max-width: 250px;" }
+<img src="../images/1c1-0-Namespace.jpg" style="width: 85% !important; max-width: 250px;" alt="VDS Architecture">
 </div>
 </div>
 
@@ -23,28 +23,28 @@ This section describes the procedures for **deploying the Supervisor Namespace u
 
 ## Namespace Deployment {: #namespacedeployment }
 
-![Topology](images/1c1-0-Topology.jpg){ width="80%" style="display: block; margin: 0 auto; max-width: 900px;" }
+<img src="../images/1c1-0-Topology.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Topology">
 
 
 ### Create Namespace
 Navigate to **vCenter** > **Supervisor Management** > **Namespaces**, and click **NEW NAMESPACE**.
-![Add Namespace](images/1c1-1-AddSupervisor.jpg){ width="95%" style="display: block; margin: 0 auto; max-width: 900px;" }
+<img src="../images/1c1-1-AddSupervisor.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Add Namespace">
 
 1. **Location**  
    Select the **Supervisor**, and click **Next**.  
-    ![Select Supervisor Location](images/1c1-1a-SupervisorNamespace.jpg){ width="95%" style="display: block; margin: 0 auto; max-width: 900px;" }  
+    <img src="../images/1c1-1a-SupervisorNamespace.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Select Supervisor Location">  
 
 2. **Configuration**  
    Give a name to the **Namespace**, select at least 1 **Network** to be used by the Namespace, and click **Next**.  
-    ![Name the Namespace](images/1c1-1b-SupervisorNamespace.jpg){ width="95%" style="display: block; margin: 0 auto; max-width: 900px;" }  
+    <img src="../images/1c1-1b-SupervisorNamespace.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Name the Namespace">  
 
 3. **Add Zones**  
    Select the **Workload Zone** (one or more vCenter Clusters), and click **Next**.  
-    ![Add Workload Zones](images/1c1-1c-SupervisorNamespace.jpg){ width="95%" style="display: block; margin: 0 auto; max-width: 900px;" }  
+    <img src="../images/1c1-1c-SupervisorNamespace.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Add Workload Zones">  
 
 4. **Review**  
    Review the Namespace settings, and click **Finish**.  
-    ![Review Namespace Settings](images/1c1-1d-SupervisorNamespace.jpg){ width="95%" style="display: block; margin: 0 auto; max-width: 900px;" }  
+    <img src="../images/1c1-1d-SupervisorNamespace.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Review Namespace Settings">  
 
 
 ---
@@ -54,51 +54,51 @@ Navigate to **vCenter** > **Supervisor Management** > **Namespaces**, and click 
 #### **Create a Content Library for future VMs**  
 If you plan to deploy VMs, create a Content Library with VM images.  
 Navigate to **vCenter** > **Content Libraries** > and click **Create**.  
-![Create Content Library](images/2c1-2a-ContentLibrary.jpg){ width="95%" style="display: block; margin: 0 auto; max-width: 900px;" }  
+<img src="../images/2c1-2a-ContentLibrary.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Create Content Library">  
 
 1. **Name and Location** Give it a **Name** and select the **vCenter** hosting that Content Library, and click **Next**.  
-    ![Name Content Library](images/2d1-2b-Name.jpg){ width="85%" style="display: block; margin: 0 auto; max-width: 900px;" }  
+    <img src="../images/2d1-2b-Name.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Name Content Library">  
     
 1. **Configure Content Library** Choose between **Local content library** (you upload VM images) and **Subscribed content library** (vCenter downloads VM images from a repository), and click **Next**.  
-    *I'm using here Local content library.* ![Configure Content Library Type](images/2d1-2c-ContentLibrary.jpg){ width="85%" style="display: block; margin: 0 auto; max-width: 900px;" }  
+    *I'm using here Local content library.* <img src="../images/2d1-2c-ContentLibrary.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Configure Content Library Type">  
 
 1. **Apply Security Policy** Apply **security policy** if you choose to, and click **Next**.  
-    *I'm using here no security policy.* ![Apply Security Policy](images/2d1-2d-SecurityPolicy.jpg){ width="85%" style="display: block; margin: 0 auto; max-width: 900px;" }  
+    *I'm using here no security policy.* <img src="../images/2d1-2d-SecurityPolicy.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Apply Security Policy">  
 
 1. **Add Storage** Select a **storage** to host the content library images, and click **Next**.  
-    ![Select Storage](images/2d1-2e-Storage.jpg){ width="85%" style="display: block; margin: 0 auto; max-width: 900px;" }  
+    <img src="../images/2d1-2e-Storage.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Select Storage">  
 
 1. **Ready to complete** Review the content library, and click **Finish**.  
-    ![Review Content Library Configuration](images/2d1-2f-Review.jpg){ width="85%" style="display: block; margin: 0 auto; max-width: 900px;" }  
+    <img src="../images/2d1-2f-Review.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Review Content Library Configuration">  
 
 1. **Import VM Image** In the Content Library created, import a VM Image, click on **Import Item**.  
-    ![Import VM Image Item](images/2d1-2g-ImportItem.jpg){ width="85%" style="display: block; margin: 0 auto; max-width: 900px;" }  
+    <img src="../images/2d1-2g-ImportItem.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Import VM Image Item">  
 
 1. **Choose VM Image** Choose a **Source file** via URL or Local file, and click **Import**.  
-    *I'm using here the URL https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.ova to download Ubuntu 24.04.* ![Import VM Image URL](images/2d1-2h-ImportURL.jpg){ width="85%" style="display: block; margin: 0 auto; max-width: 900px;" }  
+    *I'm using here the URL https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.ova to download Ubuntu 24.04.* <img src="../images/2d1-2h-ImportURL.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Import VM Image URL">  
 
 #### **Associate the Content Library to the Namespace**  
 Navigate to **vCenter** > **Supervisor Management** > **Supervisors**, select **[your supervisor]**, navigate to **Namespaces**, and select **[your namespace]**, and click on **VM Service - Add Content Library**.
-![Navigate to Namespace Content Library](images/2d1-3a-NameSpace.jpg){ width="95%" style="display: block; margin: 0 auto; max-width: 900px;" }  
+<img src="../images/2d1-3a-NameSpace.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Navigate to Namespace Content Library">  
 
 1. **Add Content Library** Select **Content Library with VM images**, and click **OK**.  
-    ![Select Content Library](images/2d1-3b-AddContentLibrary.jpg){ width="85%" style="display: block; margin: 0 auto; max-width: 900px;" }  
+    <img src="../images/2d1-3b-AddContentLibrary.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Select Content Library">  
 
 #### **Associate Storage Policy to the Namespace**
 Navigate to **vCenter** > **Supervisor Management** > **Supervisors**, select **[your supervisor]**, navigate to **Namespaces**, and select **[your namespace]**, and click on **Storage - Add Storage**.
-![Navigate to Namespace Storage](images/2d1-4a-NameSpace.jpg){ width="95%" style="display: block; margin: 0 auto; max-width: 900px;" }  
+<img src="../images/2d1-4a-NameSpace.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Navigate to Namespace Storage">  
 
 1. **Add Storage Policy** Select **Storage Policy**, and click **OK**.  
-    ![Select Storage Policy](images/2d1-4b-AddStorage.jpg){ width="85%" style="display: block; margin: 0 auto; max-width: 900px;" }  
+    <img src="../images/2d1-4b-AddStorage.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Select Storage Policy">  
 
 
 #### **Associate VM Class to the Namespace**  
 Navigate to **vCenter** > **Supervisor Management** > **Supervisors**, select **[your supervisor]**, navigate to **Namespaces**, and select **[your namespace]**, and click on **VM Service - Add VM Class**.
-![Navigate to Namespace VM Class](images/2d1-3a-NameSpace.jpg){ width="95%" style="display: block; margin: 0 auto; max-width: 900px;" }  
+<img src="../images/2d1-3a-NameSpace.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Navigate to Namespace VM Class">  
 
 1. **Add VM Classes** Select **VM Classes**, and click **OK**.  
 *I selected here all VM Classes type "small" and "medium".*
-![Add VM Classes](images/2d1-5b-AddVMClass.jpg){ width="85%" style="display: block; margin: 0 auto; max-width: 900px;" }  
+<img src="../images/2d1-5b-AddVMClass.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Add VM Classes">  
 
 
 
@@ -109,9 +109,9 @@ Navigate to **vCenter** > **Supervisor Management** > **Supervisors**, select **
 #### **Validate Namespace Status** 
 Once the wizard completes, verify the deployment was successful by navigating to **vCenter** > **Supervisor Management** > **Supervisors**, select **[your supervisor]**, and navigate to **Namespaces**.
 
-![Validate Namespace Status](images/1c1-6a-Validation.jpg){ width="85%" style="display: block; margin: 0 auto; max-width: 900px;" }
+<img src="../images/1c1-6a-Validation.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Validate Namespace Status">
 
 #### **Validate Namespace Storage and Content Library** 
 Verify the Namespace has at least a **Content Library**, **VM Classes**, and **Storage** by navigating to **vCenter** > **Supervisor Management** > **Supervisors**, select **[your supervisor]**, navigate to **Namespaces**, and select **[your namespace]**.
-![Validate Namespace Resources](images/2d1-6b-Validation.jpg){ width="85%" style="display: block; margin: 0 auto; max-width: 900px;" }
+<img src="../images/2d1-6b-Validation.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Validate Namespace Resources">
 

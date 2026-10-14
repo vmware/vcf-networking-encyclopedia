@@ -17,7 +17,7 @@ This section describes the procedures for **provisioning and managing Network Se
 </div>
 
 <div markdown>
-![VDS Architecture](images/2h4-0-externalip.jpg){ width="100%" style="max-width: 250px;" }
+<img src="../images/2h4-0-externalip.jpg" style="width: 85% !important; max-width: 250px;" alt="VDS Architecture">
 </div>
 </div>
 
@@ -27,7 +27,7 @@ This section describes the procedures for **provisioning and managing Network Se
 
 The primary use case for configuring an **External IP** is to provide 1:1 Network Address Translation (NAT) for VMs residing on Private Subnets, enabling direct inbound and outbound connectivity with the physical upstream network.
 
-![Topology](images/2h4-1-Topology.jpg){ width="55%" style="display: block; margin: 0 auto; max-width: 900px;" }
+<img src="../images/2h4-1-Topology.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Topology">
 
 ??? warning "vCenter Namespace External IPs currently Unsupported"
     Due to a current limitation within vCenter Namespaces, the provisioning of External IPs is **not presently supported** in this architecture.  

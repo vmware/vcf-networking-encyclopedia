@@ -12,7 +12,7 @@ This section describes the procedures for configuring Transit Gateways using the
 </div>
 
 <div markdown>
-![vCenter External Connection](images/3b-0-Transit_Gateway.jpg){ width="100%" style="max-width: 150px;" }
+<img src="../images/3b-0-Transit_Gateway.jpg" style="width: 85% !important; max-width: 150px;" alt="vCenter External Connection">
 </div>
 
 </div>
@@ -28,13 +28,13 @@ Different Transit Gateway types are available:
 | [**Centralized TGW**](#cent-tgw) | Supports L2 and L3 Fabric.<br> Offers Stateful Network Services (Outbound-NAT and NAT). VPN can also be configured but from NSX. | Egress traffic is hairpinned through a centralized Tier-0/VRF gateway hosted on an Edge Cluster. |
 | [**Distributed TGW**](#dist-tgw)| Supports only L2 Fabric. <br> Offers Stateful Network Services (Outbound-NAT and NAT) with VNA Nodes. VPN can also be configured but from NSX. | Routing occurs locally at the ESX host level (distributed dataplane). Stateful Network Services traffic is redirected through a VPC-SR Gateway in a VNA Cluster. |
 
-![TGW Types](images/3b-0-Transit_Gateway_Types.jpg){: .center style="width:70%" }
+<img src="../images/3b-0-Transit_Gateway_Types.jpg" style="display: block; margin: 0 auto; width: 60% !important; max-width: 500px;" alt="TGW Types">
 
 ---
 
 ## Centralized Transit Gateway {: #cent-tgw }
 
-![Ext Connectivity Cent](images/3b-1-Cent.jpg){: .center style="width:30%" }
+<img src="../images/3b-1-Cent.jpg" style="display: block; margin: 0 auto; width: 30% !important; max-width: 200px;" alt="Ext Connectivity Cent">
 
 ### Configuration
 
@@ -44,10 +44,10 @@ Different Transit Gateway types are available:
 </div>
 
 * **Step1. Create new Centralized Transit Gateway**  
-![Cent TGW config](images/3b-1a-Create_Cent_TGW.jpg){ width="60%" style="display: block; margin: 0 auto; max-width: 900px;" }
+<img src="../images/3b-1a-Create_Cent_TGW.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width:600px;" alt="Cent TGW config">
 
 * **Step2. Configure Centralized Transit Gateway Connectivity**  
-    ![Cent TGW connectivity](images/3b-1b-Configure_Cent_TGW.jpg){ width="80%" style="display: block; margin: 0 auto; max-width: 900px;" }
+    <img src="../images/3b-1b-Configure_Cent_TGW.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="Cent TGW connectivity">
 
     * **Span**:  
       Determines how VPC subnets below this Transit Gateway will extend across vCenter clusters.  
@@ -65,7 +65,7 @@ Different Transit Gateway types are available:
       Select the specific Edge Cluster that will host this Centralized Transit Gateway.
 
 * **Step3. Configure Workload Domain Connectivity**  
-    ![Cent WLD connectivity](images/3b-1c-Configure_WLD.jpg){ width="80%" style="display: block; margin: 0 auto; max-width: 900px;" }
+    <img src="../images/3b-1c-Configure_WLD.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="Cent WLD connectivity">
 
     * **External Connection**:  
       You can create a new or use an existing Centralized External Connection.  
@@ -90,24 +90,24 @@ Different Transit Gateway types are available:
         Because this represents a logical configuration mapping rather than an active link-state protocol, the status will typically remain Green (Healthy) once the settings are validated by the NSX Manager.
     </div>
 
-![Cent TGW validation](images/3b-1d-Validation_Cent_TGW.jpg){ width="80%" style="display: block; margin: 0 auto; max-width: 900px;" }
+<img src="../images/3b-1d-Validation_Cent_TGW.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 600px;" alt="Cent TGW validation">
 
 ---
 
 ## Distributed Transit Gateway  {: #dist-tgw }
 
-![Ext Connectivity Dist](images/3b-2-Dist.jpg){: .center style="width:30%" }
+<img src="../images/3b-2-Dist.jpg" style="display: block; margin: 0 auto; width: 30% !important; max-width: 200px;" alt="Ext Connectivity Dist">
 
 ### Configuration
 
 * **Step1. Create new Distributed Transit Gateway**  
-    ![Dist TGW config](images/3b-2a-Create_Dist_TGW.jpg){ width="60%" style="display: block; margin: 0 auto; max-width: 900px;" }
+    <img src="../images/3b-2a-Create_Dist_TGW.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 600px;" alt="Dist TGW config">
 
 * **Step2. Configure Distributed Transit Gateway Connectivity**  
-    ![Dist TGW connectivity](images/3b-2b-Configure_Dist_TGW.jpg){ width="80%" style="display: block; margin: 0 auto; max-width: 900px;" }
+    <img src="../images/3b-2b-Configure_Dist_TGW.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="Dist TGW connectivity">
 
 * **Step3. Configure External Network Connectivity**  
-    ![Dist WLD connectivity](images/3b-2c-Configure_Ext_Conn.jpg){ width="80%" style="display: block; margin: 0 auto; max-width: 900px;" }
+    <img src="../images/3b-2c-Configure_Ext_Conn.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="Dist WLD connectivity">
 
     * **External Connection**:  
       You can create a new or use an existing Distributed External Connection.  
@@ -123,7 +123,7 @@ Different Transit Gateway types are available:
 
 * **Step4. Configure VPC Service**   
     Option to offer Network Services NAT, AVI Plugin.
-    ![Dist WLD connectivity](images/3b-2d-Configure_VPC_Service.jpg){ width="70%" style="display: block; margin: 0 auto; max-width: 900px;" }
+    <img src="../images/3b-2d-Configure_VPC_Service.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 800px;" alt="Dist WLD connectivity">
 
     * **Virtual Network Appliance Cluster**:  
       Select the VNA Cluster to host the future VPC-SR Gateways.  
@@ -143,5 +143,5 @@ Different Transit Gateway types are available:
         Because this represents a logical configuration mapping rather than an active link-state protocol, the status will typically remain Green (Healthy) once the settings are validated by the NSX Manager.
     </div>
 
-    ![Dist TGW validation](images/3b-2e-Validation_Dist_TGW.jpg){ width="80%" style="display: block; margin: 0 auto; max-width: 900px;" }
+    <img src="../images/3b-2e-Validation_Dist_TGW.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 600px;" alt="Dist TGW validation">
 ---

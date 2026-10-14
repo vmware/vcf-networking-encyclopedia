@@ -21,7 +21,7 @@ This section describes the procedures for **Troubleshooting Network Services int
 </div>
 
 <div markdown>
-![VDS Architecture](images/3g1-0-k8s.jpg){ width="100%" style="max-width: 250px;" }
+<img src="../images/3g1-0-k8s.jpg" style="width: 85% !important; max-width: 250px;" alt="VDS Architecture">
 </div>
 </div>
 
@@ -33,10 +33,10 @@ A Full Application (Load Balancer + Pods) has been deployed (see [Application De
 ### View
 
 #### Logical View
-![Logical](images/3i1-0-LogicalView.jpg){ width="75%" style="display: block; margin: 0 auto; max-width: 900px;" }
+<img src="../images/3i1-0-LogicalView.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Logical">
 
 #### Physical View
-![Physical](images/3i1-0-PhysicalView.jpg){ width="95%" style="display: block; margin: 0 auto; max-width: 900px;" }
+<img src="../images/3i1-0-PhysicalView.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Physical">
 
 ??? note "Physical View diagram - Active Logical Routers (T0, CTGW, VPC-SR)"
     For ease of reading in the diagram, all the Active logical routers (T0, CTGW, VPC-SR) have been placed in the same Edge Node1.  

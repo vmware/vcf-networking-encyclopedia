@@ -13,7 +13,7 @@ Explore the configuration guides for each VPC network service:
 <div class="grid" markdown style="grid-template-columns: 25% 75%">
 
 <div markdown>
-![vCenter VPC Network Services](images/vCenter-VPCNetworkServices.jpg){ width="100%" style="max-width: 250px;" }
+<img src="images/vCenter-VPCNetworkServices.jpg" style="width: 85% !important; max-width: 250px;" alt="vCenter VPC Network Services">
 </div>
 
 <div markdown>
@@ -46,7 +46,7 @@ Explore the configuration guides for each VPC network service:
 <div markdown>
 !!! warning "Prerequisite: vCenter must be VPC-ready"
     Before configuring VPC network services, the VPC Network Connectivity (Centralized or Distributed) must be configured.  
-    ![vCenter VPC Ready](images/Validate_VPC_Ready.jpg){ width="80%" style="display: block; margin: 0 auto; max-width: 900px;" }
+    <img src="images/Validate_VPC_Ready.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="vCenter VPC Ready">
 </div>
 <div markdown>
 </div>
@@ -61,7 +61,7 @@ Explore the configuration guides for each VCF Network Infrastructure and Externa
 <div class="grid" markdown style="grid-template-columns: 25% 75%; gap: 10px;">
 
 <div markdown>
-![vCenter VPC Connectivity](images/vCenter-VPCConnectivity.jpg){ width="100%" style="max-width: 250px;" }
+<img src="images/vCenter-VPCConnectivity.jpg" style="width: 85% !important; max-width: 250px;" alt="vCenter VPC Connectivity">
 </div>
 
 <div markdown>

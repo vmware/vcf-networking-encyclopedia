@@ -11,7 +11,7 @@ This section describes the procedures for configuring  Connectivity Profile usin
 </div>
 
 <div markdown>
-![vCenter Conn Profile](images/3e-0-Conn_Prof.jpg){ width="100%" style="max-width: 250px;" }
+<img src="../images/3e-0-Conn_Prof.jpg" style="width: 85% !important; max-width: 250px;" alt="vCenter Conn Profile">
 </div>
 
 </div>
@@ -27,7 +27,7 @@ Different Connectivity Profile types are available:
 | [**Centralized Conn Prof**](#cent-conn) | Connectivity Profile for Centralized Transit Gateways. | VPC Gateways route traffic through a Centralized Transit Gateway. |
 | [**Distributed Conn Prof**](#dist-conn)| Connectivity Profile for Distributed Transit Gateways. | VPC Gateways route traffic through a Distributed Transit Gateway. |
 
-![Connectivity Prof Types](images/3e-0-Conn_Prof_Types.jpg){: .center style="width:75%" }
+<img src="../images/3e-0-Conn_Prof_Types.jpg" style="display: block; margin: 0 auto; width: 60% !important; max-width: 500px;" alt="Connectivity Prof Types">
 
 
 Defines the VPC's connection to the Transit Gateway, specifies the assigned External and Private-TGW IP blocks, and determines which VPC Services are enabled.
@@ -37,12 +37,12 @@ Defines the VPC's connection to the Transit Gateway, specifies the assigned Exte
 
 ## Centralized Connectivity Profile {: #cent-conn }
 
-![Conn Prof Cent](images/3e-1-Cent.jpg){: .center style="width:30%" }
+<img src="../images/3e-1-Cent.jpg" style="display: block; margin: 0 auto; width: 30% !important; max-width: 200px;" alt="Conn Prof Cent">
 
 ### Configuration
 
 * **Step1. Create Connectivity Profile**  
-    ![Connectivity Prof config](images/3e-1a-Create_ConnProf.jpg){ width="95%" style="display: block; margin: 0 auto; max-width: 900px;" }
+    <img src="../images/3e-1a-Create_ConnProf.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Connectivity Prof config">
 
     * **Transit Gateway**:  
       Select the Centralized Transit Gateway, VPC Gateways will be connected to.
@@ -80,19 +80,19 @@ The status reflects the successful application of the configuration.
     Because this represents a logical configuration mapping rather than an active link-state protocol, the status will typically remain Green (Healthy) once the settings are validated by the NSX Manager.
 </div>
 
-![Connectivity Prof validation](images/3e-1b-Validation_ConProf.jpg){ width="80%" style="display: block; margin: 0 auto; max-width: 900px;" }
+<img src="../images/3e-1b-Validation_ConProf.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Connectivity Prof validation">
 
 
 ---
 
 ## Distributed Connectivity Profile {: #dist-conn }
 
-![Conn Prof Dist](images/3e-2-Dist.jpg){: .center style="width:30%" }
+<img src="../images/3e-2-Dist.jpg" style="display: block; margin: 0 auto; width: 30% !important; max-width: 200px;" alt="Conn Prof Dist">
 
 ### Configuration
 
 * **Step1. Create Connectivity Profile**  
-    ![Connectivity Prof config](images/3e-2a-Create_ConnProf.jpg){ width="95%" style="display: block; margin: 0 auto; max-width: 900px;" }
+    <img src="../images/3e-2a-Create_ConnProf.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Connectivity Prof config">
 
     * **Transit Gateway**:  
       Select the Distributed Transit Gateway, VPC Gateways will be connected to.
@@ -123,7 +123,7 @@ The status reflects the successful application of the configuration.
 ??? info "Note about the Status"
     Because this represents a logical configuration mapping rather than an active link-state protocol, the status will typically remain Green (Healthy) once the settings are validated by the NSX Manager.
 
-![Connectivity Prof validation](images/3e-2b-Validation_ConProf.jpg){ width="80%" style="display: block; margin: 0 auto; max-width: 900px;" }
+<img src="../images/3e-2b-Validation_ConProf.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Connectivity Prof validation">
 </div>
 
 ---

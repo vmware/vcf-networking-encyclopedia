@@ -12,7 +12,7 @@ This section describes the procedures for configuring IP Blocks using the vSpher
 </div>
 
 <div markdown>
-![vCenter IP Blocks](images/3c-0-IP_Block.jpg){ width="100%" style="max-width: 250px;" }
+<img src="../images/3c-0-IP_Block.jpg" style="width: 85% !important; max-width: 250px;" alt="vCenter IP Blocks">
 </div>
 
 </div>
@@ -29,7 +29,7 @@ Different IP Block types are available:
 | [**Private-TGW**](#privatetgw-ipblock)| Used for [**VPC Subnets Private-TGW**](1b-vpc_subnet.md#overlay) and [**specific NAT (SNAT/DNAT)**](1c-vpc_nat.md#full-nat)| Best for shared internal services across the enterprise. |
 | [**Private-VPC**](#privatevpc-ipblock)| Used for [**VPC Subnets Private-VPC**](1b-vpc_subnet.md#overlay). <br> Note: Configuration is within the [VPC Gateway](1a-vpc_gateway.md). | Maximum isolation; workloads are "hidden" even from other VPCs. |
 
-![vCenter IP Blocks Types](images/3c-0-IP_Block-Types.jpg){: .center style="width:75%" }
+<img src="../images/3c-0-IP_Block-Types.jpg" style="display: block; margin: 0 auto; width: 60% !important; max-width: 600px;" alt="vCenter IP Blocks Types">
 
 For more information on VPC Subnets, refer to the [VPC Subnet](1b-vpc_subnet.md) page.
 
@@ -45,7 +45,7 @@ Also used for VLAN-backed Subnets.
 ### Configuration
 
 * **Step1. Create new IP Block External**  
-    ![IP Block Ext config](images/3c-1a-Create_IPBlock_Ext.jpg){ width="95%" style="display: block; margin: 0 auto; max-width: 900px;" }
+    <img src="../images/3c-1a-Create_IPBlock_Ext.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="IP Block Ext config">
 
     * **Visibility**:  
       Set to External.
@@ -73,7 +73,7 @@ Also used for VLAN-backed Subnets.
       Because this represents a logical configuration mapping rather than an active link-state protocol, the status will typically remain Green (Healthy) once the settings are validated by the NSX Manager.
   </div>
 
-![IP Block Ext validation](images/3c-1b-Validation_IPBlock_Ext.jpg){ width="90%" style="display: block; margin: 0 auto; max-width: 900px;" }
+<img src="../images/3c-1b-Validation_IPBlock_Ext.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="IP Block Ext validation">
 
 ---
 
@@ -84,7 +84,7 @@ Also used for VLAN-backed Subnets.
 This is the IP Block used for future VPC Subnets Private-TGW.
 
 * **Step1. Create new IP Block Private-TGW**  
-    ![IP Block Ext config](images/3c-2a-Create_IPBlock_Private_TGW.jpg){ width="95%" style="display: block; margin: 0 auto; max-width: 900px;" }
+    <img src="../images/3c-2a-Create_IPBlock_Private_TGW.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="IP Block Ext config">
 
     * **Visibility**:  
       Set to Private.
@@ -111,7 +111,7 @@ This is the IP Block used for future VPC Subnets Private-TGW.
       Because this represents a logical configuration mapping rather than an active link-state protocol, the status will typically remain Green (Healthy) once the settings are validated by the NSX Manager.
   </div>
 
-  ![IP Block Ext validation](images/3c-2b-Validation_IPBlock_Private_TGW.jpg){ width="90%" style="display: block; margin: 0 auto; max-width: 900px;" }
+  <img src="../images/3c-2b-Validation_IPBlock_Private_TGW.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="IP Block Ext validation">
 
 ---
 
@@ -133,7 +133,7 @@ It's configuration is managed directly within the [VPC Gateway](1a-vpc_gateway.m
 
     * **Used IPs**: The number of addresses currently assigned to active VPC subnets. For External IP Blocks, this also includes addresses consumed by NAT and Load Balancer Virtual VIPs.
 
-    ![IP Block Statistics](images/3c-4-Statistics_IPBlock.jpg){ width="95%" style="display: block; margin: 0 auto; max-width: 900px;" }
+    <img src="../images/3c-4-Statistics_IPBlock.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="IP Block Statistics">
 
 
 ---

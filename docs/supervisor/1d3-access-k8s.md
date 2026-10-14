@@ -14,7 +14,7 @@ This section describes the procedures for **deploying a K8s Cluster in a Namespa
 </div>
 
 <div markdown>
-![VDS Architecture](images/1d2-0-k8s.jpg){ width="100%" style="max-width: 250px;" }
+<img src="../images/1d2-0-k8s.jpg" style="width: 85% !important; max-width: 250px;" alt="VDS Architecture">
 </div>
 </div>
 
@@ -22,7 +22,7 @@ This section describes the procedures for **deploying a K8s Cluster in a Namespa
 
 ##  K8s Cluster Access {: #access_k8s }
 
-![Topology](images/1d2-1-Topology.jpg){ width="80%" style="display: block; margin: 0 auto; max-width: 900px;" }
+<img src="../images/1d2-1-Topology.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Topology">
 
 ??? info ":material-laptop: Client Operating System"
     While the command outputs below are captured from a **Windows client**, the `vcf` and `kubectl` CLI tools operate identically across **Linux** and **macOS** environments.

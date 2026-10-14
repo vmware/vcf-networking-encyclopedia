@@ -21,7 +21,7 @@ This section describes the procedures for **Troubleshooting Network Services int
 </div>
 
 <div markdown>
-![VDS Architecture](images/2f1-0-VM.jpg){ width="100%" style="max-width: 250px;" }
+<img src="../images/2f1-0-VM.jpg" style="width: 85% !important; max-width: 250px;" alt="VDS Architecture">
 </div>
 </div>
 
@@ -33,13 +33,13 @@ As described in the [Packet Walk - N/S External to VM](2i2-packetwalk-ext_vm.md)
 
 ### Logical and Physical View
 * **Scenario A: VM connected to Private Subnet (Private-VPC or Private-TGW)**  
-![Logical](images/2i2-0-LogicalView1.jpg){ width="75%" style="display: block; margin: 0 auto; max-width: 900px;" }
+<img src="../images/2i2-0-LogicalView1.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Logical">
 In this case, external clients can't reach that subnet, and so can't reach VMs on it.
 
 * **Scenario B: VM connected to Public Subnet**  
-![Logical](images/2i2-0-LogicalView2.jpg){ width="75%" style="display: block; margin: 0 auto; max-width: 900px;" }
+<img src="../images/2i2-0-LogicalView2.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Logical">
 
-![Physical](images/2i2-0-PhysicalView2.jpg){ width="95%" style="display: block; margin: 0 auto; max-width: 900px;" }
+<img src="../images/2i2-0-PhysicalView2.jpg" style="display: block; margin: 0 auto; width: 85% !important; max-width: 900px;" alt="Physical">
 
 
 ### Troubleshooting Steps
