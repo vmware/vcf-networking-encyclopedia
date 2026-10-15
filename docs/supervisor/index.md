@@ -37,7 +37,7 @@ This section describes the procedures for **deploying the Supervisor** within a 
 | :--- | :--- | :--- | :--- | :--- |
 | **Physical Fabric** | MTU ≥ 1700,<br> L2 or L3 Fabric with VLAN <br>+ BGP | MTU ≥ 1700,<br> L2 Fabric with VLAN | MTU ≥ 1700,<br> EVPN Fabric <br>+ BGP | MTU ≥ 1500,<br> L2 Fabric with VLAN |
 | **VCF-A Support** | 🟢 Yes | 🟢 Yes | 🟢 Yes | 🟢 Yes |
-| **Network Services** | 🟢 All | 🟢 Most <br>(All but VPN) | 🟢 Most <br>(All but VPN) | 🔴 Limited <br>(No Subnets private, No NAT, No VPN, Supports VMs with IP unicast traffic only (no multicast/VRRP/HSRP/etc)) |
+| **Network Services** | 🟢 All <br><br><img src="images/0-Services-TEP.jpg" style="width: 85%; max-width: 140px !important;" alt="NSX Services TEP"> | 🟢 Most <br>(All but VPN) <br><img src="images/0-Services-TEP.jpg" style="width: 85%; max-width: 140px !important;" alt="NSX Services TEP"> | 🟢 Most <br>(All but VPN) <br><img src="images/0-Services-TEP.jpg" style="width: 85%; max-width: 140px !important;" alt="NSX Services TEP"> | 🔴 Limited <br>(No Subnets private, No NAT, No VPN, Supports VMs with IP unicast traffic only (no multicast/VRRP/HSRP/etc)) <br><img src="images/0-Services-TEPLess.jpg" style="width: 85%; max-width: 140px !important;" alt="NSX Services TEP-Less"> |
 | **Scale** | 🟢 Large | 🟢 Large | 🟢 Large | 🔴 Limited <br>(All VMs and K8s consume a Public IP)|
 | **Security** | 🟢 Isolated | 🟢 Isolated | 🟢 Isolated | 🔴 Direct Access <br>(K8s Nodes reachable from external) |
 | **High Availability** | 🟢 Yes | 🟢 Yes | 🟢 Yes | 🟢 Yes |
