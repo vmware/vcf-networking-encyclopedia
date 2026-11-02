@@ -126,6 +126,7 @@ Supervisor with "NSX + CTGW/Edge/T0" has the following networking requirements:
 
 * **Tier-0 (T0)**  
     The Tier-0 is the logical router responsible for routing traffic between the logical and physical networks.  
+    The Tier-0 can be Active/Standby or Active/Active (since 9.1.0).
 
     ??? info "Status Validation"
         The T0 status is only available from NSX.  
