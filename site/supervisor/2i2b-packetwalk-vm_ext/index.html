@@ -5907,17 +5907,20 @@
 <li>
 <p><strong>Step1: VM accesses an External server</strong><br>
 <code>VM1 (Private-IP) =&gt; External-IP</code>  </p>
-<p>The routing is always done on the source-ESX.<br>
+<p>L3 routing is always performed locally on the source ESXi host.<br>
 <strong>. In case of Private-VPC</strong><br>
-The traffic is routed by the VPC Gateway, which sends it to the VPC-SR Active for NAT.<br>
+The traffic is routed by the VPC Gateway.<br>
+Because Private-VPC subnet traffic leaving the VPC requires Source NAT (SNAT), it is redirected to the <strong>Active VPC-SR</strong> on the VNA.<br>
 <strong>. In case of Private-TGW</strong><br>
-The traffic is routed by the VPC Gateway, then the DTGW, then back to the VPC, which sends it to the VPC-SR Active for NAT (in VNA Node).  </p>
+The traffic is routed by the VPC Gateway, then the DTGW.
+Because Private-TGW subnet traffic leaving the DTGW requires Source NAT (SNAT), the DTGW forwards the traffic back to the VPC, which directs it to the <strong>Active VPC-SR</strong> on the VNA.  </p>
 </li>
 <li>
-<p><strong>Step2: NAT accesses the External server</strong><br>
+<p><strong>Step2: SNAT accesses the External server</strong><br>
 <code>NAT (10.1.7.131) =&gt; External-IP</code>  </p>
 <p><strong>. For both cases Private-VPC and Private-TGW</strong><br>
-The VPC-SR Active Source-NAT the VM-IP and sends it back to the VPC Gateway, which routes to the DTGW, and physical fabric.</p>
+The <strong>Active VPC-SR</strong> performs Source NAT on the packet (translating <code>VM-Private-IP</code> to <code>10.1.7.131</code>).<br>
+The NATed packet is returned to the VPC Gateway / DTGW, which routes it out the external VLAN uplink onto the physical fabric toward the destination.</p>
 </li>
 </ul>
 
