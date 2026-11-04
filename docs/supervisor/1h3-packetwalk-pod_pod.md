@@ -37,7 +37,7 @@ A Full Application (Load Balancer + Pods) has been deployed (see [Application De
 
 ---
 
-### Packet Walk Explanation
+### Packet Walk
 
 * **Step 1: Traffic leaves the Source Pod**  
 `Source-Pod-IP (192.168.145.2) => Destination-Pod-IP (192.168.146.2)`  
