@@ -1,7 +1,7 @@
 # VCF Networking Encyclopedia
 
 Welcome to the **VCF Networking Encyclopedia**.  
-This document provides step-by-step instructions for configuring network services across different VCF Components.
+Your step-by-step guide to configuring, monitoring, and troubleshooting network services across all VCF components.
 
 ---
 
