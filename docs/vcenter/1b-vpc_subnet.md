@@ -76,7 +76,8 @@ Different Subnet Overlay types are available:
     * **DHCP Config**  
       . "None": No DHCP Service.  
       . "DHCP Server": VPC Subnet will have a DHCP Server to offer DHCP service to the workloads connected to that VPC Subnet.  
-      . "DHCP Relay": VPC Gateway will forward DHCP requests for workloads connected to that VPC Subnet to an external DHCP Server.This option is not available if the VPC Gateway is connected to a Distributed Transit Gateway.
+      . "DHCP Relay": VPC Gateway will forward DHCP requests for workloads connected to that VPC Subnet to an external DHCP Server.This option is not available if the VPC Gateway is connected to a Distributed Transit Gateway.  
+      More information about VPC DHCP Server and Relay [here](1d-vpc_DHCP.md).      
 
 
 ### Monitoring
