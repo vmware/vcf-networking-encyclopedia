@@ -11,6 +11,7 @@ This section describes the procedures for **Troubleshooting Network Services int
 * **Packet Walk**  
     * [N/S External to VIP](3i1-packetwalk-ext_vip.md)  
     * [**N/S External to VM**](#packetwalk)  
+    * [N/S NAT to External](3i2b-packetwalk-vm_ext.md)  
     * [E/W Pod to Pod](3i3-packetwalk-pod_pod.md)  
     * [E/W VM to VM](3i4-packetwalk-vm_vm.md)  
 * App Access Broken  
@@ -70,7 +71,7 @@ In this case, external clients can't reach that subnet, and so can't reach VMs o
 `Client-IP => VM1 (10.150.0.18)`  
 
     The Active VPC-SR routes the traffic to its VPC-DR and forwards it directly to the VM.  
-    The traffic passing from the Edge Node to the ESXi host where the VM resides is encapsulated between the Edge TEP and the ESXi TEP.
+    The traffic passing from the Edge Node to the ESX host where the VM resides is encapsulated between the Edge TEP and the ESX TEP.
 
 
 #### South/North: VM replies to the External Client
@@ -86,7 +87,7 @@ In this case, external clients can't reach that subnet, and so can't reach VMs o
     VPC-DR routes to its default gateway: VPC-SR.  
     VPC-SR routes to the default gateway: CTGW-Active.  
     CTGW routes to the default gateway: T0-Active.  
-    *Note: The Active CTGW and VPC-SR could be on different Edge Nodes, initiating cross-Edge Node traffic.  
+    *Note: The Active VPC-SR and CTGW could reside on different Edge Nodes. In such cases, cross-Edge Node traffic would occur (not represented).  
     Also, in an Active/Active T0 configuration, client traffic would be distributed across all Edge Nodes hosting the T0.*
 
 * **Step6: T0 routes to the physical fabric**  
@@ -96,9 +97,9 @@ In this case, external clients can't reach that subnet, and so can't reach VMs o
     *Note: In the case of multiple physical routers configured in Active/Active (as represented), the T0 routes traffic among all available physical routers.*
 
 !!! info "Architectural Note: Asymmetric Routing"
-    As represented in the diagrams, the North/South traffic is processed in an Active/Active fashion across the physical routers and the T0-Active.  
-    Consequently, a specific flow can be asymmetric: processed by one physical router inbound, and a different physical router outbound. This asymmetric routing is completely transparent to the communication flow and the applications.
+    As represented in the diagrams, the North/South and South/North traffic can be asymetric: processed by one physical router inbound, and a different physical router outbound.
 
     !!! Warning "Stateless Physical Routing Required"
         Because the traffic path can be asymmetric, the upstream physical network devices must operate as standard routers, not stateful firewalls.  
-        A stateful firewall will flag asymmetric return traffic as invalid and drop the packets.
+        A stateful firewall will flag asymmetric return traffic as invalid and drop the packets.  
+        If the T0 routes traffic to a firewall, configure the T0 as Active/Standby and configure BGP so 1 path is prefered to avoid asymetric traffic.

@@ -55,7 +55,7 @@ One or a few VMs have been deployed (see [Application Deployment > App Deploymen
 * **Step1: VM accesses an External server**  
 `VM1 (Private-IP) => External-IP`  
 
-    L3 routing is always performed locally on the source ESXi host.  
+    L3 routing is always performed locally on the source ESX host.  
     **. In case of Private-VPC**  
     The traffic is routed by the VPC Gateway.  
     Because Private-VPC subnet traffic leaving the VPC requires Source NAT (SNAT), it is redirected to the **Active VPC-SR** on the VNA.  

@@ -11,7 +11,7 @@
         <link rel="prev" href="../3i1-packetwalk-ext_vip/">
       
       
-        <link rel="next" href="../3i3-packetwalk-pod_pod/">
+        <link rel="next" href="../3i2b-packetwalk-vm_ext/">
       
       
         
@@ -5289,6 +5289,8 @@
       
         
       
+        
+      
     
     
     
@@ -5523,6 +5525,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3i2b-packetwalk-vm_ext/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    N/S NAT to External
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -5914,6 +5944,7 @@
 <li><strong>Packet Walk</strong>  <ul>
 <li><a href="../3i1-packetwalk-ext_vip/">N/S External to VIP</a>  </li>
 <li><a href="#packetwalk"><strong>N/S External to VM</strong></a>  </li>
+<li><a href="../3i2b-packetwalk-vm_ext/">N/S NAT to External</a>  </li>
 <li><a href="../3i3-packetwalk-pod_pod/">E/W Pod to Pod</a>  </li>
 <li><a href="../3i4-packetwalk-vm_vm/">E/W VM to VM</a>  </li>
 </ul>
@@ -5972,7 +6003,7 @@ In this case, external clients can't reach that subnet, and so can't reach VMs o
 <p><strong>Step3: VPC forwards the traffic to the VM</strong><br>
 <code>Client-IP =&gt; VM1 (10.150.0.18)</code>  </p>
 <p>The Active VPC-SR routes the traffic to its VPC-DR and forwards it directly to the VM.<br>
-The traffic passing from the Edge Node to the ESXi host where the VM resides is encapsulated between the Edge TEP and the ESXi TEP.</p>
+The traffic passing from the Edge Node to the ESX host where the VM resides is encapsulated between the Edge TEP and the ESX TEP.</p>
 </li>
 </ul>
 <h4 id="southnorth-vm-replies-to-the-external-client">South/North: VM replies to the External Client</h4>
@@ -5991,7 +6022,7 @@ The traffic passing from the Edge Node to the ESXi host where the VM resides is 
 <p>VPC-DR routes to its default gateway: VPC-SR.<br>
 VPC-SR routes to the default gateway: CTGW-Active.<br>
 CTGW routes to the default gateway: T0-Active.<br>
-<em>Note: The Active CTGW and VPC-SR could be on different Edge Nodes, initiating cross-Edge Node traffic.<br>
+<em>Note: The Active VPC-SR and CTGW could reside on different Edge Nodes. In such cases, cross-Edge Node traffic would occur (not represented).<br>
 Also, in an Active/Active T0 configuration, client traffic would be distributed across all Edge Nodes hosting the T0.</em></p>
 </li>
 <li>
@@ -6003,12 +6034,12 @@ Also, in an Active/Active T0 configuration, client traffic would be distributed 
 </ul>
 <div class="admonition info">
 <p class="admonition-title">Architectural Note: Asymmetric Routing</p>
-<p>As represented in the diagrams, the North/South traffic is processed in an Active/Active fashion across the physical routers and the T0-Active.<br>
-Consequently, a specific flow can be asymmetric: processed by one physical router inbound, and a different physical router outbound. This asymmetric routing is completely transparent to the communication flow and the applications.</p>
+<p>As represented in the diagrams, the North/South and South/North traffic can be asymetric: processed by one physical router inbound, and a different physical router outbound.</p>
 <div class="admonition warning">
 <p class="admonition-title">Stateless Physical Routing Required</p>
 <p>Because the traffic path can be asymmetric, the upstream physical network devices must operate as standard routers, not stateful firewalls.<br>
-A stateful firewall will flag asymmetric return traffic as invalid and drop the packets.</p>
+A stateful firewall will flag asymmetric return traffic as invalid and drop the packets.<br>
+If the T0 routes traffic to a firewall, configure the T0 as Active/Standby and configure BGP so 1 path is prefered to avoid asymetric traffic.</p>
 </div>
 </div>
 

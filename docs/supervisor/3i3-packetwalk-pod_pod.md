@@ -11,6 +11,7 @@ This section describes the procedures for **Troubleshooting Network Services int
 * **Packet Walk** 
     * [N/S External to VIP](3i1-packetwalk-ext_vip.md)  
     * [N/S External to VM](3i2-packetwalk-ext_vm.md)  
+    * [N/S NAT to External](3i2b-packetwalk-vm_ext.md)  
     * [**E/W Pod to Pod**](#packetwalk)  
     * [E/W VM to VM](3i4-packetwalk-vm_vm.md)  
 * **App Access Broken**

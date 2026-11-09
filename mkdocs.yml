@@ -178,6 +178,7 @@ nav:
               - Packet Walk:
                 - N/S External to VIP: supervisor/3i1-packetwalk-ext_vip.md
                 - N/S External to VM: supervisor/3i2-packetwalk-ext_vm.md
+                - N/S NAT to External: supervisor/3i2b-packetwalk-vm_ext.md
                 - E/W Pod to Pod: supervisor/3i3-packetwalk-pod_pod.md
                 - E/W VM to VM: supervisor/3i4-packetwalk-vm_vm.md
               - App Access Broken:
