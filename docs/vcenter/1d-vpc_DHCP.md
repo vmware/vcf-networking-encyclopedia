@@ -96,7 +96,8 @@ Different DHCP types are available:
     When a 3rd-party DHCP server is located on the physical network (outside the VPC subnet), DHCP Relay is supported exclusively on:
 
     * [**VPC Public Subnets**](1b-vpc_subnet.md#overlay)
-    * [**Centralized Transit Gateways**](3b-transit_gateway.md)
+    * [**Centralized Transit Gateways**](3b-transit_gateway.md#cent-tgw)
+    * [**Distributed Transit Gateways**](3b-transit_gateway.md#dist-tgw) from 9.1.1 (require [Connectivity Profile](3e-connectivity_profile.md#dist-conn) with VNA + N/S services enabled)
    
 </div>
 
